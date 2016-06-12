@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>MergedIDd685ba25e3a</title>
+<title>MergedIDd404d4f5176</title>
 <meta http-equiv="content-type" content="text/html;charset=euc-kr" />
 <style type="text/css">
 body {
@@ -18,14 +18,14 @@ body {
 </head>
 <body>
  <!-- PieChart generated in R 3.2.4 by googleVis 0.5.10 package -->
-<!-- Thu Jun 09 23:37:35 2016 -->
+<!-- Mon Jun 13 03:01:11 2016 -->
 
 
 <!-- jsHeader -->
 <script type="text/javascript">
  
 // jsData 
-function gvisDataPieChartIDd687ea332f1 () {
+function gvisDataPieChartIDd40136dd9b () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -686,15 +686,15 @@ var datajson =
 180.7111281 
 ] 
 ];
-data.addColumn('string','start2.Country.Name');
-data.addColumn('number','start2.Income');
+data.addColumn('string','start4.Country.Name');
+data.addColumn('number','start4.Income');
 data.addRows(datajson);
 return(data);
 }
 
 
 // jsData 
-function gvisDataPieChartIDd6846b335a4 () {
+function gvisDataPieChartIDd40420618f4 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -1362,72 +1362,76 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartPieChartIDd687ea332f1() {
-var data = gvisDataPieChartIDd687ea332f1();
+function drawChartPieChartIDd40136dd9b() {
+var data = gvisDataPieChartIDd40136dd9b();
 var options = {};
 options["allowHtml"] = true;
 options["title"] = "국가별 소득";
+options["pieHole"] =    0.3;
 options["pieSliceText"] = "label";
+options["pieStartAngle"] =    100;
 options["sliceVisibilityThreshold"] =  0.009;
 options["width"] =    600;
 options["height"] =    700;
+options["slices"] = {0: {offset: 0.3},1: {offset: 0.3},2: {offset: 0.3}};
 
 
-    chartPieChartIDd687ea332f1 = new google.visualization.ChartWrapper({
+    chartPieChartIDd40136dd9b = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'PieChart',
-    containerId: 'PieChartIDd687ea332f1',
+    containerId: 'PieChartIDd40136dd9b',
     options: options
     });
-    chartPieChartIDd687ea332f1.draw();
+    chartPieChartIDd40136dd9b.draw();
     
 
 }
 
-  function openEditorPieChartIDd687ea332f1() {
+  function openEditorPieChartIDd40136dd9b() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartPieChartIDd687ea332f1 = editor.getChartWrapper();  
-  chartPieChartIDd687ea332f1.draw(document.getElementById('PieChartIDd687ea332f1')); 
+  chartPieChartIDd40136dd9b = editor.getChartWrapper();  
+  chartPieChartIDd40136dd9b.draw(document.getElementById('PieChartIDd40136dd9b')); 
   }); 
-  editor.openDialog(chartPieChartIDd687ea332f1);
+  editor.openDialog(chartPieChartIDd40136dd9b);
   }
     
 
 
 // jsDrawChart
-function drawChartPieChartIDd6846b335a4() {
-var data = gvisDataPieChartIDd6846b335a4();
+function drawChartPieChartIDd40420618f4() {
+var data = gvisDataPieChartIDd40420618f4();
 var options = {};
 options["allowHtml"] = true;
 options["title"] = "국가별 인구";
 options["pieSliceText"] = "label";
-options["pieStartAngle"] =    180;
+options["pieStartAngle"] =    100;
 options["sliceVisibilityThreshold"] =   0.02;
 options["width"] =    600;
 options["height"] =    700;
+options["slices"] = {0: {offset: 0.3}, 1: {offset: 0.3}};
 
 
-    chartPieChartIDd6846b335a4 = new google.visualization.ChartWrapper({
+    chartPieChartIDd40420618f4 = new google.visualization.ChartWrapper({
     dataTable: data,       
     chartType: 'PieChart',
-    containerId: 'PieChartIDd6846b335a4',
+    containerId: 'PieChartIDd40420618f4',
     options: options
     });
-    chartPieChartIDd6846b335a4.draw();
+    chartPieChartIDd40420618f4.draw();
     
 
 }
 
-  function openEditorPieChartIDd6846b335a4() {
+  function openEditorPieChartIDd40420618f4() {
   var editor = new google.visualization.ChartEditor();
   google.visualization.events.addListener(editor, 'ok',
   function() { 
-  chartPieChartIDd6846b335a4 = editor.getChartWrapper();  
-  chartPieChartIDd6846b335a4.draw(document.getElementById('PieChartIDd6846b335a4')); 
+  chartPieChartIDd40420618f4 = editor.getChartWrapper();  
+  chartPieChartIDd40420618f4.draw(document.getElementById('PieChartIDd40420618f4')); 
   }); 
-  editor.openDialog(chartPieChartIDd6846b335a4);
+  editor.openDialog(chartPieChartIDd40420618f4);
   }
     
  
@@ -1447,9 +1451,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartIDd687ea332f1);
+callbacks.push(drawChartPieChartIDd40136dd9b);
 })();
-function displayChartPieChartIDd687ea332f1() {
+function displayChartPieChartIDd40136dd9b() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1486,9 +1490,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartPieChartIDd6846b335a4);
+callbacks.push(drawChartPieChartIDd40420618f4);
 })();
-function displayChartPieChartIDd6846b335a4() {
+function displayChartPieChartIDd40420618f4() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -1512,19 +1516,19 @@ callbacks.shift()();
 </script>
  
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDd687ea332f1"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDd40136dd9b"></script>
 
 
 <!-- jsChart -->  
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDd6846b335a4"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartPieChartIDd40420618f4"></script>
  
 <table cellspacing='20' bgcolor='red'>
 <tr>
 <td>
 
 <!-- divChart -->
-<input type='button' onclick='openEditorPieChartIDd687ea332f1()' value='편집'/>  
-<div id="PieChartIDd687ea332f1" 
+<input type='button' onclick='openEditorPieChartIDd40136dd9b()' value='편집'/>  
+<div id="PieChartIDd40136dd9b" 
   style="width: 600; height: 700;">
 </div>
 
@@ -1532,16 +1536,16 @@ callbacks.shift()();
 <td>
 
 <!-- divChart -->
-<input type='button' onclick='openEditorPieChartIDd6846b335a4()' value='편집'/>  
-<div id="PieChartIDd6846b335a4" 
+<input type='button' onclick='openEditorPieChartIDd40420618f4()' value='편집'/>  
+<div id="PieChartIDd40420618f4" 
   style="width: 600; height: 700;">
 </div>
 
 </td>
 </tr>
 </table>
- <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedIDd685ba25e3a.html">MergedIDd685ba25e3a</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
-<div><p>국가별 인구, 소득을 내림차순으로 정리하여 파이차트로 나타내었다. 전체적인 값을 보기 위함이기 때문에 슬라이스 옵션은 추가하지 않았다. 첫번째 차트를 보면 노르웨이가 인구당 소득이 가장 높으며 그 다음으로는 스위스, 룩셈브루크가 인구당 소득이 높았다는 것을 알 수 있다. 두번째 차트를 보면 인도와 중국의 인구 비율이 가장 높은 것을 알 수 있다.</div></p>
+ <div><span>Data: various &#8226; Chart ID: <a href="Chart_MergedIDd404d4f5176.html">MergedIDd404d4f5176</a> &#8226; <a href="https://github.com/mages/googleVis">googleVis-0.5.10</a></span><br /> 
+<div><p>국가별 인구, 소득을 내림차순으로 정리하여 파이차트로 나타내었다. 첫번째 차트를 보면 노르웨이가 인구당 소득이 가장 높으며 그 다음으로는 스위스, 룩셈브루크가 인구당 소득이 높았다는 것을 알 수 있다. 두번째 차트를 보면 인도와 중국의 인구 비율이 가장 높은 것을 알 수 있다. 연구결과에서 거론한 것들은 모두 슬라이스 옵션을 추가하였다.</div></p>
 <!-- htmlFooter -->
 <span> 
   R version 3.2.4 Revised (2016-03-16 r70336) 
